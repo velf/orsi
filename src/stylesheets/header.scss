@@ -1,0 +1,43 @@
+.header {
+  font-family: 'Merriweather', serif;
+  display: flex;
+  flex-direction: column;
+  .main{
+    padding-left: 2%;
+  }
+  .title {
+    margin: 30px 0 0 0;
+    font-size: 3rem;
+    line-height: 40px;
+  }
+  .subtitle {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+  section{
+    align-self: center;
+  }
+}
+
+
+.logo img {
+  animation: logo-spin infinite 20s linear;
+  height: 120px;
+}
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg);
+   }
+}
+
+/* Medium screens to large*/
+@media all and (min-width: 600px) {
+  .header {
+    flex-direction: row;
+    justify-content: flex-start;
+    section{
+      align-self: flex-start;
+    }
+  }
+}

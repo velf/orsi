@@ -1,0 +1,22 @@
+nav {
+  flex: 2 100%;
+  column-count: 4;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      padding: 0.5rem 0;
+    }
+    a {
+      padding: 2px 5px;
+      border-radius: 3px;
+      color: #444;
+      &:hover{
+        text-decoration: none;
+        background-color: #ec008c;
+        color: #FFF;
+      }
+    }
+  }
+}
