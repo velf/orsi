@@ -1,0 +1,111 @@
+.container{
+  color: #444;
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  /*align-content: flex-start;*/
+  /*justify-content: flex-start;*/
+  padding: 0 4%;
+}
+
+/* We tell all items to be 100% width */
+header, article, .nav, .aside, footer {
+  flex: 1 100%;
+  border: 1px solid #444;
+}
+header, article, .nav, .aside {
+  align-self: flex-start;
+}
+footer{
+  align-self: flex-end;
+}
+
+.logo img {
+  animation: logo-spin infinite 20s linear;
+  height: 120px;
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg);
+   }
+}
+
+.header {
+  font-family: 'Merriweather', serif;
+  display: flex;
+  flex-direction: column;
+}
+.header .main{
+  padding-left: 2%;
+}
+.header .title {
+  margin: 30px 0 0 0;
+  font-size: 3rem;
+  line-height: 40px;
+}
+.header .subtitle {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+.header section{
+  align-self: center;
+}
+
+body::selection, p::selection, h1::selection,
+h2::selection, h3::selection, h4::selection,
+h5::selection, blockquote::selection, label::selection,
+td::selection, span::selection, a::selection {
+    background: #ec008c;
+    color: white;
+}
+
+
+/* Medium screens */
+@media all and (min-width: 600px) {
+  .aside { flex: 1 auto; }
+  .container{
+    padding: 0 6%;
+  }
+  .aside, article {
+    padding: 1% 2%;
+  }
+
+  .header {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .header section{
+    align-self: flex-start;
+  }
+}
+
+/* Large screens */
+@media all and (min-width: 800px) {
+  .container{
+    padding: 0 12%;
+  }
+  .aside, article {
+    padding: 1% 2%;
+  }
+
+  article { flex: 2 0; }
+  .aside-1 { order: 1; }
+  article    { order: 2; }
+  .aside-2 { order: 3; }
+  footer  { order: 4; }
+
+  .header {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .header section{
+    align-self: flex-start;
+  }
+
+}
