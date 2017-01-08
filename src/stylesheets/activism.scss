@@ -1,0 +1,26 @@
+.activism{
+  a {
+    text-decoration: none;
+  }
+  section {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  p {
+    margin: 0;
+    font-size: 3rem;
+    padding: 0 5rem;
+    text-shadow: 1px 1px #333;
+    color: #fff;
+  }
+}

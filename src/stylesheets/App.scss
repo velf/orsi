@@ -1,45 +1,43 @@
 .container{
   color: #444;
-  font-family: 'Open Sans', sans-serif;
-  display: flex;
-  flex-flow: row wrap;
-  align-content: flex-start;
-  padding: 0 4%;
+  // font-family: 'Open Sans', sans-serif;
+  font-family: georgia,serif;
 }
 
-/* We tell all items to be 100% width */
-header, article, aside, footer {
-  flex: 1 100%;
-  border: 1px solid #444;
-}
-
-/* Medium screens */
-@media all and (min-width: 600px) {
-  .aside { flex: 1 auto; }
-  .container{
-    padding: 0 6%;
-  }
-  aside, article {
-    padding: 1% 2%;
-  }
-}
-
-/* Large screens */
-@media all and (min-width: 800px) {
-  .container{
-    padding: 0 12%;
-  }
-  aside, article {
-    padding: 1% 2%;
-  }
-
-  article {
-    flex: 5 0;
-    order: 1;
-  }
-  aside {
-    flex: 2 0;
-    order: 2;
-  }
-  footer  { order: 3; }
-}
+//
+// /* We tell all items to be 100% width */
+// header, article, aside, footer {
+//   flex: 1 100%;
+//   border: 1px solid #444;
+// }
+//
+// /* Medium screens */
+// @media all and (min-width: 600px) {
+//   .aside { flex: 1 auto; }
+//   .container{
+//     padding: 0 6%;
+//   }
+//   aside, article {
+//     padding: 1% 2%;
+//   }
+// }
+//
+// /* Large screens */
+// @media all and (min-width: 800px) {
+//   .container{
+//     padding: 0 12%;
+//   }
+//   aside, article {
+//     padding: 1% 2%;
+//   }
+//
+//   article {
+//     flex: 5 0;
+//     order: 1;
+//   }
+//   aside {
+//     flex: 2 0;
+//     order: 2;
+//   }
+//   footer  { order: 3; }
+// }

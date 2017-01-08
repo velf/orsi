@@ -1,0 +1,21 @@
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 0 4%;
+  article{
+    flex: 2;
+  }
+  aside{
+    flex: 1;
+  }
+}
+
+@media all and (min-width: 600px) {
+  main {
+    flex-direction: row;
+    padding: 0 10%;
+    aside{
+      padding-left: 2%
+    }
+  }
+}

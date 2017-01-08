@@ -1,29 +1,30 @@
-.header {
-  font-family: 'Merriweather', serif;
+header {
+  // font-family: 'Merriweather', serif;
+  margin-top: 55px;
+  font-family: "Franklin ITC", sans-serif;
   display: flex;
   flex-direction: column;
-  .main{
-    padding-left: 2%;
+  align-items: center;
+  h1{
+    line-height: 24px;
+    font-size: 2.5rem;
+    width: 100%;
+    min-height: 55px;
+    small {
+      margin: 0;
+      // font-family: 'Open Sans', sans-serif;
+      // font-family: georgia,serif;
+      font-family: "Franklin ITC Light",sans-serif;
+      font-size: 1.2rem;
+      font-weight: lighter;
+    }
   }
-  .title {
-    margin: 30px 0 0 0;
-    font-size: 3rem;
-    line-height: 40px;
-  }
-  .subtitle {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-  }
-  section{
-    align-self: center;
+  .logo img {
+    animation: logo-spin infinite 20s linear;
+    height: 130px;
   }
 }
 
-
-.logo img {
-  animation: logo-spin infinite 20s linear;
-  height: 120px;
-}
 @keyframes logo-spin {
   from { transform: rotate(0deg); }
   to {
@@ -31,13 +32,31 @@
    }
 }
 
-/* Medium screens to large*/
 @media all and (min-width: 600px) {
-  .header {
+  header {
     flex-direction: row;
-    justify-content: flex-start;
-    section{
-      align-self: flex-start;
+    // align-items: flex-start;
+    padding: 0 10%;
+    h1 {
+      padding-left: 2%;
     }
   }
+}
+
+.role-enter {
+  opacity: 0.01;
+}
+
+.role-enter.role-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.role-leave {
+  opacity: 1;
+}
+
+.role-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
 }
