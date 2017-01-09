@@ -6,16 +6,30 @@ class Content extends Component {
   render(){
     const industry = this.props.industry.map((item, i) => (
       <div key={i}>
-        <p>{item.date}</p>
-        <p><a href={item.url}></a>{item.title}</p>
-        <p>{item.description}</p>
+        <article className="experience-block">
+          <div>
+            <p>{item.date}</p>
+            <p>{item.title}</p>
+            <p><a href={item.companyUrl}>{item.company}</a></p>
+          </div>
+          <div>
+            <p>{item.description}</p>
+          </div>
+        </article>
       </div>
     ));
     const academics = this.props.academics.map((item, i) => (
       <div key={i}>
-        <p>{item.date}</p>
-        <p><a href={item.url}></a>{item.title}</p>
-        <p>{item.description}</p>
+        <article className="experience-block">
+          <div>
+            <p>{item.date}</p>
+            <p>{item.title}</p>
+            <p><a href={item.companyUrl}>{item.company}</a></p>
+          </div>
+          <div>
+            <p>{item.description}</p>
+          </div>
+        </article>
       </div>
     ));
     return (

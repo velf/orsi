@@ -1,7 +1,38 @@
+
+ $pink: lighten(#ec008c, 0%);
+
 main {
   display: flex;
   flex-direction: column;
   padding: 0 4%;
+  a{
+    color: $pink;
+    text-decoration: none;
+    &:hover{
+      color: lighten($pink, 20%);
+    }
+  }
+  .experience-block{
+    display: flex;
+    flex-direction: column;
+    div:first-of-type{
+      flex: 1;
+      p{
+        color: $pink;
+        margin: 0;
+        font-style: italic;
+        line-height: 22px;
+        &:first-of-type{
+          margin-top: 16px;
+          text-transform: uppercase;
+          font-style: normal;
+        }
+      }
+    }
+    div:last-of-type{
+      flex: 2;
+    }
+  }
   article{
     flex: 2;
   }
@@ -16,6 +47,9 @@ main {
     padding: 0 10%;
     aside{
       padding-left: 2%
+    }
+    .experience-block{
+      flex-direction: row;
     }
   }
 }

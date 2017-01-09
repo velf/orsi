@@ -10,53 +10,62 @@ let data = {
   },
   industry: [
     {
-      date: '2015 -',
+      date: '2015 / present',
       title: 'Freelance Data Analyst',
-      url: '',
+      company: '',
+      companyUrl: '',
       description: "Taking part in various #dataanalysis projects from e­health to artificial bots' behaviour monitoring #nlp #big data #market research #python #sql"
     }, {
-      date: '2014 - 2015',
-      title: 'Head of Sales, Neticle Technologies',
-      url: 'https://neticletech.com/',
+      date: '2014 / 2015',
+      title: 'Head of Sales',
+      company: 'Neticle Technologies',
+      companyUrl: 'https://neticletech.com/',
       description: "Understanding clients' media monitoring needs and implement their feedback into #software development. Building a #sales team from scratch. #nlp #product"
     }, {
-      date: '2010 - 2014',
-      title: 'Product Owner, Maven Seven Network Research Ltd.',
-      url: 'http://maven7.com/',
+      date: '2010 / 2014',
+      title: 'Product Owner',
+      company: 'Maven Seven Network',
+      companyUrl: 'http://maven7.com/',
       description: "Started as a #network scientist intern, became a full­time analyst then the product owner of the #social media analytical products. Position required beyond #advanced statistical analysis to take part in #project management and customer relations as well."
     }
   ],
   academics: [
     {
-      date: '2015 -',
-      title: 'Phd Candidate in Network Science, CNS, Central European University',
-      url: 'https://cns.ceu.edu/',
+      date: '2015 / present',
+      title: 'Phd Candidate in Network Science',
+      company: 'CNS, Central European University',
+      companyUrl: 'https://cns.ceu.edu/',
       description: "My research question is what is the difference between successful female and male career paths in project­ based environments. With a #temporal social network approach I analyse individual #success through collaborative #networks on data taken from #GitHub. Supervisor: Prof. Balázs Vedres Teacher Assistant of Prof. Albert­László Barabási"
     }, {
-      date: '2016 -',
-      title: 'Programming Lecturer, Eötvös Loránd University, Department of Social Sciences',
-      url: '',
-      description: "Data Analysis with #python for social Statistics Msc Students"
+      date: '2016 / present',
+      title: 'Programming Lecturer',
+      company: 'Eötvös Loránd University',
+      companyUrl: '',
+      description: "Data Analysis with #python for social Statistics Msc Students on the Department of Social Sciences"
     }, {
-      date: '2013 - 2014',
-      title: 'Network Science Research Assistant, Eötvös Loránd University, Department of Biological Physics, Team of Prof. Tamas Vicsek',
-      url: '',
-      description: ""
+      date: '2013 / 2014',
+      title: 'Network Science Research Assistant',
+      company: 'Eötvös Loránd University',
+      companyUrl: '',
+      description: "Department of Biological Physics, Team of Prof. Tamas Vicsek"
     }, {
-      date: '2011 - 2012',
-      title: 'Statistics Lecturer, Eötvös Loránd University, Department of Social Sciences',
-      url: '',
-      description: ""
+      date: '2011 / 2012',
+      title: 'Statistics Lecturer',
+      company: 'Eötvös Loránd University',
+      companyUrl: '',
+      description: "Department of Social Sciences"
     }, {
-      date: '2010 - 2012',
-      title: 'Msc in Statistics, Eötvös Loránd University, Department of Social Sciences ',
-      url: '',
-      description: ""
+      date: '2010 / 2012',
+      title: 'Msc in Statistics',
+      company: 'Eötvös Loránd University',
+      companyUrl: '',
+      description: "Department of Social Sciences"
     }, {
-      date: '2007 - 2010',
-      title: 'Ba in Social Sciences, Eötvös Loránd University, Department of Social Sciences',
-      url: '',
-      description: ""
+      date: '2007 / 2010',
+      title: 'Ba in Social Sciences, Eötvös Loránd University',
+      company: 'Eötvös Loránd University',
+      companyUrl: '',
+      description: "Department of Social Sciences"
     }
   ],
   activism: [
