@@ -5,6 +5,7 @@ main {
   display: flex;
   flex-direction: column;
   padding: 0 4%;
+  margin-top: 20px;
   a{
     color: $pink;
     text-decoration: none;
@@ -13,25 +14,29 @@ main {
     }
   }
   .experience-block{
-    display: flex;
-    flex-direction: column;
-    div:first-of-type{
-      flex: 1;
-      p{
-        color: $pink;
-        margin: 0;
-        font-style: italic;
-        line-height: 22px;
-        &:first-of-type{
-          margin-top: 16px;
-          text-transform: uppercase;
-          font-style: normal;
-        }
+    // display: flex;
+    // flex-direction: column;
+    p{
+      color: $pink;
+      margin: 0;
+      font-style: italic;
+      line-height: 22px;
+      &:first-of-type{
+        margin-top: 16px;
+        text-transform: uppercase;
+        font-style: normal;
+      }
+      &:last-of-type{
+        color: inherit;
+        font-style: normal;
       }
     }
-    div:last-of-type{
-      flex: 2;
-    }
+    // div:first-of-type{
+    //   flex: 1;
+    // }
+    // div:last-of-type{
+    //   flex: 2;
+    // }
   }
   article{
     flex: 2;

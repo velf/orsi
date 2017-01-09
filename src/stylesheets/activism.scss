@@ -2,6 +2,9 @@
   a {
     text-decoration: none;
   }
+  h2{
+    padding: 0 4%;
+  }
   section {
     width: 100vw;
     height: 100vh;
@@ -22,5 +25,13 @@
     padding: 0 5rem;
     text-shadow: 1px 1px #333;
     color: #fff;
+  }
+}
+
+@media all and (min-width: 600px) {
+  .activism {
+    h2{
+      padding: 0 10%;
+    }
   }
 }

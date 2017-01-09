@@ -13,7 +13,7 @@ class Activism extends Component {
     ));
     return (
       <div className="activism">
-        <h1>Activism</h1>
+        <h2>Activism</h2>
         {activism}
       </div>
       );

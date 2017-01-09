@@ -3,34 +3,21 @@ import '../stylesheets/content.scss';
 
 class Content extends Component {
 
+  templateBuilder(item, i){
+    return <article key={i} className="experience-block">
+            <p>{item.date}</p>
+            <p>{item.title}</p>
+            <p><a href={item.companyUrl}>{item.company}</a></p>
+            <p>{item.description}</p>
+          </article>
+  }
+
   render(){
     const industry = this.props.industry.map((item, i) => (
-      <div key={i}>
-        <article className="experience-block">
-          <div>
-            <p>{item.date}</p>
-            <p>{item.title}</p>
-            <p><a href={item.companyUrl}>{item.company}</a></p>
-          </div>
-          <div>
-            <p>{item.description}</p>
-          </div>
-        </article>
-      </div>
+      this.templateBuilder(item, i)
     ));
     const academics = this.props.academics.map((item, i) => (
-      <div key={i}>
-        <article className="experience-block">
-          <div>
-            <p>{item.date}</p>
-            <p>{item.title}</p>
-            <p><a href={item.companyUrl}>{item.company}</a></p>
-          </div>
-          <div>
-            <p>{item.description}</p>
-          </div>
-        </article>
-      </div>
+      this.templateBuilder(item, i)
     ));
     return (
       <main>
