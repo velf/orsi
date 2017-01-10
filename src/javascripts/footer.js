@@ -10,7 +10,9 @@ class Footer extends Component {
   render(){
     return (
         <footer>
-          <p>Copyright © {this.year()} {this.props.name} All rights reserved.</p>
+          <p className="heart"> ♥ </p>
+          <p>{this.props.name}</p>
+          <p>Copyright © {this.year()}, all rights reserved.</p>
         </footer>
       );
   }

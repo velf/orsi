@@ -14,8 +14,6 @@ main {
     }
   }
   .experience-block{
-    // display: flex;
-    // flex-direction: column;
     p{
       color: $pink;
       margin: 0;
@@ -27,16 +25,11 @@ main {
         font-style: normal;
       }
       &:last-of-type{
+        margin: 5px 0 20px;
         color: inherit;
         font-style: normal;
       }
     }
-    // div:first-of-type{
-    //   flex: 1;
-    // }
-    // div:last-of-type{
-    //   flex: 2;
-    // }
   }
   article{
     flex: 2;
@@ -45,6 +38,7 @@ main {
     flex: 1;
   }
 }
+
 
 @media all and (min-width: 600px) {
   main {

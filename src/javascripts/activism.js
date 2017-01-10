@@ -5,16 +5,22 @@ import '../stylesheets/activism.scss';
 class Activism extends Component {
   render(){
     const activism = this.props.activism.map((item, i) => (
-      <a key={i} href={item.url} target="blank">
-        <section style={{backgroundImage: 'url(' + item.image + ')'}}>
+      <li key={i}>
+        <a key={i} href={item.url} target="blank">
+          <img src={item.image} alt={item.title} />
           <p>{item.title}</p>
-        </section>
-      </a>
+        </a>
+      </li>
     ));
     return (
       <div className="activism">
-        <h2>Activism</h2>
-        {activism}
+        <div className="title-stripe">
+          <h2 id="activism">Activism</h2>
+          <div></div>
+        </div>
+        <ul>
+          {activism}
+        </ul>
       </div>
       );
   }

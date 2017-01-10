@@ -70,17 +70,17 @@ let data = {
   ],
   activism: [
     {
-      title: 'Django girls mentoring',
+      title: 'Django girls',
       url: 'https://djangogirls.org/budapest/',
-      image: 'https://djangogirls.org/uploads/event/backgrounds/Fotolla_17_of_755.jpg'
+      image: '/images/django.jpg'
     }, {
-      title: 'Bridge Budapest Association',
+      title: 'Bridge',
       url: 'http://bridgebudapest.org/',
-      image: 'http://bridgebudapest.org/images/index_2.jpg'
+      image: '/images/bridge.jpg'
     }, {
-      title: 'DKonnekt Mentor Program',
+      title: 'DKonnekt',
       url: 'https://www.facebook.com/konnektmentorprogram/',
-      image: 'https://scontent.fmad3-1.fna.fbcdn.net/v/t31.0-8/12038701_489436531224084_4630610696171921210_o.jpg?oh=e1c9500f52ad5311a2ce7ce129d18c96&oe=59210CFE'
+      image: '/images/konnet.jpg'
     }
   ]
 }

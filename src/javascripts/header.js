@@ -45,7 +45,7 @@ class Header extends React.Component {
       </small>
     ));
     return (
-      <header>
+      <header id="top">
         <div className="logo"><img src={logo} alt="logo" /></div>
         <div>
           <h1>

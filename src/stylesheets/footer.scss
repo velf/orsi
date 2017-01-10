@@ -5,10 +5,11 @@ footer{
   // padding-bottom: 60px;
   min-height: 80px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-family: "Franklin ITC Light",sans-serif;
-  padding: 0 2%;
+  padding: 4% 2%;
 
 
   background: #ffffff; /* Old browsers */
@@ -17,19 +18,24 @@ footer{
   background: linear-gradient(to bottom,  #ffffff 0%,$pink 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='$pink',GradientType=0 ); /* IE6-9 */
   p{
-
     background-color: #444;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     color: transparent;
     text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+    margin: 0;
+    line-height: 22px;
+  }
+  .heart{
+    color: #ec008c;
+    font-size: 3rem;
+    line-height: 45px;
   }
 }
 
 @media all and (min-width: 600px) {
   footer {
-    flex-direction: row;
-    padding: 0 10%;
+    padding: 4% 10%;
   }
 }

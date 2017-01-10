@@ -22,14 +22,23 @@ class Content extends Component {
     return (
       <main>
         <article>
-          <h2>Industry</h2>
+          <div className="title-stripe">
+            <h2 id="industry">Industry</h2>
+            <div></div>
+          </div>
           {industry}
-          <h2>Academics</h2>
+          <div className="title-stripe">
+            <h2 id="academics">Academics</h2>
+            <div></div>
+          </div>
           {academics}
         </article>
 
         <aside>
-          <h1>Social graph</h1>
+          <div className="title-stripe">
+            <h2>Social graph</h2>
+            <div></div>
+          </div>
           <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
         </aside>
 
