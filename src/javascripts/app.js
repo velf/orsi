@@ -4,7 +4,7 @@ import '../stylesheets/app.scss';
 import Header from '../javascripts/header';
 import Navigation from '../javascripts/navigation';
 import Content from '../javascripts/content';
-import Activism from '../javascripts/activism'
+import Activism from '../javascripts/activism';
 import Footer from '../javascripts/footer';
 
 import data from '../javascripts/data';

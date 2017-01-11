@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Graph from '../javascripts/graph/graph';
 import '../stylesheets/content.scss';
 
 class Content extends Component {
@@ -36,12 +37,11 @@ class Content extends Component {
 
         <aside>
           <div className="title-stripe">
-            <h2>Social graph</h2>
+            <h2>Skills</h2>
             <div></div>
           </div>
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <Graph />
         </aside>
-
       </main>
       );
   }

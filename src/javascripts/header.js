@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import logo from '../images/logo.svg';
+import email from '../images/email.svg';
+import linkedin from '../images/linkedin.svg';
+import twitter from '../images/twitter.svg';
+import github from '../images/github.svg';
 import '../stylesheets/header.scss';
 
 
@@ -58,6 +62,14 @@ class Header extends React.Component {
              {roles}
             </ReactCSSTransitionGroup>
           </h1>
+        </div>
+        <div className="social">
+          <ul>
+            <li><a href={this.props.twitter} target="blank"><img src={twitter} alt="twitter" /></a></li>
+            <li><a href={this.props.linkedin} target="blank"><img src={linkedin} alt="linkedin" /></a></li>
+            <li><a href={this.props.github} target="blank"><img src={github} alt="github" /></a></li>
+            <li><a href={'mailto:' + this.props.email} target="blank"><img src={email} alt="email" /></a></li>
+          </ul>
         </div>
       </header>
     );
