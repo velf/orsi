@@ -62,7 +62,7 @@ let data = {
       description: "Department of Social Sciences"
     }, {
       date: '2007 / 2010',
-      title: 'Ba in Social Sciences, Eötvös Loránd University',
+      title: 'Ba in Social Sciences',
       company: 'Eötvös Loránd University',
       companyUrl: '',
       description: "Department of Social Sciences"

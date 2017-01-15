@@ -1,0 +1,7 @@
+@mixin gradient($start-color, $end-color, $percent-start, $percent-end, $orientation: left, $orientation-regular: right) {
+  background: $start-color; /* Old browsers */
+  background: -moz-linear-gradient($orientation,  $start-color $percent-start,  $end-color $percent-end); /* FF3.6-15 */
+  background: -webkit-linear-gradient($orientation,  $start-color $percent-start, $end-color $percent-end); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to $orientation-regular,  $start-color $percent-start, $end-color $percent-end); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=1 ); /* IE6-9 */
+}

@@ -1,15 +1,7 @@
 import React, { Component } from 'react';
-// import '../stylesheets/footer.scss';
-import ScatterPlot from './scatter-plot';
-// import * as d3 from "d3";
 import Skill from './skill-graph';
 
 
-const styles = {
-  width   : 500,
-  height  : 300,
-  padding : 30,
-};
 
 // The number of data points for the chart.
 const numDataPoints = 50;
@@ -30,19 +22,9 @@ class Graph extends Component{
   componentDidMount() {
     Skill.init();
   }
-  randomizeData() {
-    this.setState({ data: randomDataSet() });
-  }
   render() {
     return (
       <div>
-        <h1>Playing With React and D3</h1>
-        <ScatterPlot {...this.state} {...styles} />
-        <div className="controls">
-          <button className="btn randomize" onClick={() => this.randomizeData()}>
-            Randomize Data
-          </button>
-        </div>
         <div id="graph"></div>
       </div>)
   }

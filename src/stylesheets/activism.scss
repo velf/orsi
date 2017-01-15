@@ -1,3 +1,4 @@
+@import "colors";
 
 .activism{
   padding: 0 4%;
@@ -11,11 +12,12 @@
     justify-content: center;
     flex-direction: column;
     li {
+      align-self: center;
       position: relative;
       list-style:none;
       border-radius:50%;
       margin: 3% 4% 5%;
-      background-color: #ec008c;
+      background-color: $secondaryTypo;
       width:250px;
       height:250px;
       box-shadow: 0 9px 30px 3px rgba(0,0,0,.46);
@@ -31,11 +33,10 @@
         padding: 0;
         position:absolute;
         top:40%;
-        // left:50%;
         text-align: center;
         width: 100%;
         font-size:2.5em;
-        color:white;
+        color: $white;
         opacity:0;
         transition: all .3s ease-in-out;
         display:block;
@@ -51,7 +52,7 @@
   }
 }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 800px) {
   .activism {
     padding: 0 10%;
     ul{

@@ -1,5 +1,8 @@
 
- $pink: lighten(#ec008c, 0%);
+@import "colors";
+
+ $light: lighten($secondaryTypo, 0%);
+ $hover: lighten($light, 20%);
 
 main {
   display: flex;
@@ -7,15 +10,15 @@ main {
   padding: 0 4%;
   margin-top: 20px;
   a{
-    color: $pink;
+    color: $light;
     text-decoration: none;
     &:hover{
-      color: lighten($pink, 20%);
+      color: $hover;
     }
   }
   .experience-block{
     p{
-      color: $pink;
+      color: $light;
       margin: 0;
       font-style: italic;
       line-height: 22px;
@@ -32,28 +35,16 @@ main {
     }
   }
   article{
-    flex: 2;
-  }
-  aside{
     flex: 1;
   }
 }
 
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 800px) {
   main {
-    flex-direction: row;
     padding: 0 10%;
     aside{
       padding-left: 2%
     }
-    .experience-block{
-      flex-direction: row;
-    }
   }
-}
-
-#graph {
-    width: 300px;
-    height: 300px;
 }

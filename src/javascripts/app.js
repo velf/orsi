@@ -4,6 +4,7 @@ import '../stylesheets/app.scss';
 import Header from '../javascripts/header';
 import Navigation from '../javascripts/navigation';
 import Content from '../javascripts/content';
+import Skills from '../javascripts/skills';
 import Activism from '../javascripts/activism';
 import Footer from '../javascripts/footer';
 
@@ -16,6 +17,7 @@ class App extends Component {
         <Navigation />
         <Header {...data.user} />
         <Content  {...data} />
+        <Skills />
         <Activism {...data} />
         <Footer {...data.user} />
       </div>

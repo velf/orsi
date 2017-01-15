@@ -1,5 +1,4 @@
 header {
-  // font-family: 'Merriweather', serif;
   margin-top: 65px;
   font-family: "Franklin ITC", sans-serif;
   display: flex;
@@ -12,8 +11,6 @@ header {
     min-height: 60px;
     small {
       margin: 0;
-      // font-family: 'Open Sans', sans-serif;
-      // font-family: georgia,serif;
       font-family: "Franklin ITC Light",sans-serif;
       font-size: 1.2rem;
       font-weight: lighter;
@@ -61,18 +58,8 @@ header {
    }
 }
 
-@media all and (min-width: 600px) {
-  header {
-    flex-direction: row;
-    // align-items: flex-start;
-    padding: 0 10%;
-    h1 {
-      font-size: 3rem;
-      padding-left: 2%;
-    }
-  }
-}
 
+// css transition
 .role-enter {
   opacity: 0.01;
 }
@@ -89,4 +76,16 @@ header {
 .role-leave.example-leave-active {
   opacity: 0.01;
   transition: opacity 300ms ease-in;
+}
+// css transition
+
+@media all and (min-width: 800px) {
+  header {
+    flex-direction: row;
+    padding: 0 10%;
+    h1 {
+      font-size: 3rem;
+      padding-left: 2%;
+    }
+  }
 }

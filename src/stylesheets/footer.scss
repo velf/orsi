@@ -1,5 +1,7 @@
 
- $pink: lighten(#ec008c, 45%);
+@import "colors";
+@import "mixins";
+$light: lighten($secondaryTypo, 45%);
 
 footer{
   // padding-bottom: 60px;
@@ -11,12 +13,7 @@ footer{
   font-family: "Franklin ITC Light",sans-serif;
   padding: 4% 2%;
 
-
-  background: #ffffff; /* Old browsers */
-  background: -moz-linear-gradient(top,  #ffffff 0%, $pink 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  #ffffff 0%,$pink 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  #ffffff 0%,$pink 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='$pink',GradientType=0 ); /* IE6-9 */
+  @include gradient($white, $light, 0%, 100%, top, bottom);
   p{
     background-color: #444;
     -webkit-background-clip: text;
@@ -28,13 +25,13 @@ footer{
     line-height: 22px;
   }
   .heart{
-    color: #ec008c;
+    color: $secondaryTypo;
     font-size: 3rem;
     line-height: 45px;
   }
 }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 800px) {
   footer {
     padding: 4% 10%;
   }

@@ -1,11 +1,13 @@
+@import "colors";
+@import "mixins";
+
 .container{
-  color: #444;
-  // font-family: 'Open Sans', sans-serif;
+  color: $baseTypo;
   font-family: georgia,serif;
 }
 
 p {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 h2{
   font-size: 2rem;
@@ -14,12 +16,7 @@ h2{
 .title-stripe{
   position:relative;
   div{
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ec008c+0,ffffff+61 */
-    background: #ec008c; /* Old browsers */
-    background: -moz-linear-gradient(left,  #ec008c 0%, #ffffff 61%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  #ec008c 0%,#ffffff 61%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  #ec008c 0%,#ffffff 61%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec008c', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+    @include gradient($secondaryTypo, $white, 0%, 61%);
     height: 2px;
     position: absolute;
     width: 100%;

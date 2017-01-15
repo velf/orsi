@@ -27,6 +27,7 @@ class Navigation extends Component {
           <li className={this.isActive('#top')} onClick={this.jump.bind(this, '#top')}><a href="#">home</a></li>
           <li className={this.isActive('#industry')} onClick={this.jump.bind(this, '#industry')}><a href="#">industry</a></li>
           <li className={this.isActive('#academics')} onClick={this.jump.bind(this, '#academics')}><a href="#">academics</a></li>
+          <li className={this.isActive('#skills')} onClick={this.jump.bind(this, '#skills')}><a href="#">skills</a></li>
           <li className={this.isActive('#activism')} onClick={this.jump.bind(this, '#activism')}><a href="#">activism</a></li>
         </ul>
       </nav>

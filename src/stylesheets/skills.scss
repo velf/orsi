@@ -1,0 +1,14 @@
+
+.skills{
+  .title-stripe{
+    padding: 0 4%;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .skills {
+    .title-stripe{
+      padding: 0 10%;
+    }
+  }
+}
