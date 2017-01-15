@@ -92,5 +92,8 @@
     "presets": [
       "react-app"
     ]
-  }
+  },
+  "engines": {
+    "node": "7.3.0"
+  },
 }
