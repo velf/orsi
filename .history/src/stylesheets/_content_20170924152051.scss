@@ -1,0 +1,48 @@
+
+ $light: lighten($secondaryTypo, 0%);
+ $hover: lighten($light, 20%);
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 0 4%;
+  margin-top: 20px;
+  a{
+    color: $light;
+    text-decoration: none;
+    &:hover{
+      color: $hover;
+    }
+  }
+  .experience-block{
+    p{
+      color: $light;
+      margin: 0;
+      font-style: italic;
+      line-height: 22px;
+      &:first-of-type{
+        margin-top: 16px;
+        text-transform: uppercase;
+        font-style: normal;
+      }
+      &:last-of-type{
+        margin: 5px 0 20px;
+        color: inherit;
+        font-style: normal;
+      }
+    }
+  }
+  article{
+    flex: 1;
+  }
+}
+
+
+@media all and (min-width: 800px) {
+  main {
+    padding: 0 10%;
+    aside{
+      padding-left: 2%
+    }
+  }
+}

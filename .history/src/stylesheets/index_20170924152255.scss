@@ -1,0 +1,22 @@
+@import "colors";
+@import "mixins";
+@import "app";
+@import "header";
+@import "navigation";
+@import "content";
+
+
+body::selection, p::selection, h1::selection,
+h2::selection, h3::selection, h4::selection,
+h5::selection, blockquote::selection, label::selection,
+td::selection, span::selection, a::selection {
+    background: $secondaryTypo;
+    color: $white;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}

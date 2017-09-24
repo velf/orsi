@@ -1,0 +1,23 @@
+
+.container{
+  color: $baseTypo;
+  font-family: georgia,serif;
+}
+
+p {
+  font-size: 1.125rem;
+}
+h2{
+  font-size: 2rem;
+}
+
+.title-stripe{
+  position:relative;
+  div{
+    @include gradient($secondaryTypo, $white, 0%, 61%);
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    top: 42px;
+  }
+}

@@ -1,0 +1,35 @@
+$light: lighten($secondaryTypo, 45%);
+
+footer{
+  // padding-bottom: 60px;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Franklin ITC Light",sans-serif;
+  padding: 4% 2%;
+
+  @include gradient($white, $light, 0%, 100%, top, bottom);
+  p{
+    background-color: #444;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+    margin: 0;
+    line-height: 22px;
+  }
+  .heart{
+    color: $secondaryTypo;
+    font-size: 3rem;
+    line-height: 45px;
+  }
+}
+
+@media all and (min-width: 800px) {
+  footer {
+    padding: 4% 10%;
+  }
+}

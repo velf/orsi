@@ -1,0 +1,68 @@
+.activism{
+  padding: 0 4%;
+  a {
+    text-decoration: none;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    li {
+      align-self: center;
+      position: relative;
+      list-style:none;
+      border-radius:50%;
+      margin: 3% 4% 5%;
+      background-color: $secondaryTypo;
+      width:250px;
+      height:250px;
+      box-shadow: 0 9px 30px 3px rgba(0,0,0,.46);
+      transition: all .3s ease-in-out;
+      img {
+        border-radius:50%;
+        transition: all .3s ease-in-out;
+        width:250px;
+        height:250px;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+        position:absolute;
+        top:40%;
+        text-align: center;
+        width: 100%;
+        font-size:2.5em;
+        color: $white;
+        opacity:0;
+        transition: all .3s ease-in-out;
+        display:block;
+        z-index: 1;
+      }
+      &:hover img {
+        opacity: 0.4; cursor:pointer;
+      }
+      &:hover p{
+        opacity:1;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 800px) {
+  .activism {
+    padding: 0 10%;
+    ul{
+      li {
+        width:280px;
+        height:280px;
+        img {
+          width:280px;
+          height:280px;
+        }
+      }
+      flex-direction: row;
+    }
+  }
+}
