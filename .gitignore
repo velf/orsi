@@ -12,5 +12,8 @@ build
 .env
 npm-debug.log
 
-#styles
+# styles
 src/**/*.css
+
+# local history
+.history

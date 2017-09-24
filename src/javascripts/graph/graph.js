@@ -20,12 +20,15 @@ class Graph extends Component{
     this.state = { data: randomDataSet() };
   }
   componentDidMount() {
-    Skill.init();
+    // Skill.init();
   }
   render() {
     return (
       <div>
-        <div id="graph"></div>
+        { /* <div id="graph"></div> */ }
+        <center>
+          <img style={{ maxWidth: '100%' }} src="/images/skill_network.svg" alt="skills graph" />
+        </center>
       </div>)
   }
 }

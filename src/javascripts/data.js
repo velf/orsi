@@ -1,7 +1,7 @@
 let data = {
   user: {
     name: 'Orsolya Vásárhelyi',
-    role: ['network & data scien', 'virality expert', 'your data consultant'],
+    role: ['network & data scientist', 'virality expert', 'your data consultant'],
     email: 'orsolya.vasarhelyi@gmail.com',
     github: 'https://github.com/velf',
     linkedin: 'https://www.linkedin.com/in/orsolya-vasarhelyi-43132925',

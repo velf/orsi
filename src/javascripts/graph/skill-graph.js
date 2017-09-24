@@ -6,6 +6,7 @@ let margin;
 let svg;
 let circleWidth = 5;
 let colors = d3.scaleOrdinal(d3.schemeCategory20);
+console.log(colors);
 
 
 var palette = {
