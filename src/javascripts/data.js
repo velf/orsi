@@ -1,7 +1,7 @@
 let data = {
   user: {
     name: 'Orsolya Vásárhelyi',
-    role: ['network & data scientist', 'virality expert', 'your data consultant'],
+    role: ['network & data scientist', 'computational social scientist', 'your data consultant'],
     email: 'orsolya.vasarhelyi@gmail.com',
     github: 'https://github.com/velf',
     linkedin: 'https://www.linkedin.com/in/orsolya-vasarhelyi-43132925',
@@ -11,18 +11,18 @@ let data = {
   },
   industry: [
   {
-      date: '2017 / present',
+      date: '2017 / 2018',
       title: 'Data Scientist Intern ',
       company: 'Typeform',
       companyUrl: 'https://www.typeform.com/',
-      description: "As a a network scientist my main task is to build a prediction model for product adoption through virality"
+      description: "Since Typeform is a viral product, my main task was to analyze and gaining insights of the product's recommendation network."
     },
     {
       date: '2015 / present',
       title: 'Freelance Data Scientist',
       company: '',
       companyUrl: '',
-      description: "Taking part in various data analysis projects; infleuncer identification, social media analysis"
+      description: "Taking part in various data analysis projects; infleuncer identification, virality analysis, healthcare reesarch, social media analysis"
     }, {
       date: '2014 / 2015',
       title: 'Head of Sales',
@@ -34,7 +34,7 @@ let data = {
       title: 'Product Owner',
       company: 'Maven Seven Network',
       companyUrl: 'http://maven7.com/',
-      description: "Started as a network scientist intern, became a full­time analyst then the product owner of the #social media analytical products. Position required beyond advanced statistical analysis to take part in project management and customer relations as well."
+      description: "Started as a network scientist intern, became a full­time analyst then the product owner of the social media analytical products."
     }
   ],
   academics: [
@@ -45,7 +45,7 @@ let data = {
       companyUrl: 'https://cns.ceu.edu/',
       description: "My research question is what is the difference between successful female and male career paths in project­ based environments. With a social network approach we analyse individual success through collaborative networks on data taken from GitHub. \n Supervisor: Prof. Balázs Vedres Teacher Assistant of Prof. Albert­László Barabási"
     }, {
-      date: '2016 / present',
+      date: '2016 / 2017',
       title: 'Programming Lecturer',
       company: 'Eötvös Loránd University',
       companyUrl: '',
